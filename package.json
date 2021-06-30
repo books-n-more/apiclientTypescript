@@ -1,13 +1,13 @@
 {
-  "name": "bnmApiClient",
-  "version": "1.0.0",
-  "description": "swagger client for bnmApiClient",
+  "name": "bnm-api-client",
+  "version": "1.0.0-SNAPSHOT.202106300703",
+  "description": "swagger client for bnm-api-client",
   "author": "Swagger Codegen Contributors",
   "keywords": [
     "fetch",
     "typescript",
     "swagger-client",
-    "bnmApiClient"
+    "bnm-api-client"
   ],
   "license": "Unlicense",
   "main": "./dist/index.js",
