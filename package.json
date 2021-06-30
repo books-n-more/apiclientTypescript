@@ -1,27 +1,36 @@
 {
-  "name": "",
-  "version": "",
-  "description": "OpenAPI client for ",
-  "author": "OpenAPI-Generator Contributors",
+  "name": "bnmApiClient",
+  "version": "1.0.0",
+  "description": "swagger client for bnmApiClient",
+  "author": "Swagger Codegen Contributors",
   "keywords": [
-    "axios",
+    "fetch",
     "typescript",
-    "openapi-client",
-    "openapi-generator",
-    ""
+    "swagger-client",
+    "bnmApiClient"
   ],
   "license": "Unlicense",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "scripts": {
+  "scripts" : {
     "build": "tsc --outDir dist/",
+    "test": "jest",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^12.11.5",
-    "typescript": "^3.6.4"
-  }
-}
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.0",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  }}
